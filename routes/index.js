@@ -20,6 +20,10 @@ module.exports = (app, dbs) => {
         res.send(val);
       })
   })
+
+  app.get('/search/', (req, res) => {
+    res.send('Please enter your search query')
+  })
   
   app.get('/search/:id', (req, res) => {
     const params = req.params.id;
